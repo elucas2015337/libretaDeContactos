@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/botones.css">
+<link rel="stylesheet" type="text/css" href="../css/nuevoContacto.css">
+<link rel="stylesheet" type="text/css" href="../css/style2.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Tasks</title>
+
+</head>
+        <body>
+          <script src="../js/nuevoContacto.js"></script>
+            <ul id= "barra">
+              <li id="tres"><a>Contactos</a></li>
+            </ul>
+
+          <div class = "barraDeIconos">
+            <a href="../index.html"><i class="fa fa-user"></i></a>
+            <a href="groups.html"><i class="fa fa-group"></i></a>
+            <a class="active" href="tasks.html"><i class="fa fa-tasks"></i></a>
+          </div>
+
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button button3"><i class="fa fa-plus"></i></button>
+
+          <div class="card">
+            <div class="container">
+              
+              <h4><b><a href="familia.html"><i id="taskIcon" class="fa fa-tasks"></i></a>Lavanderia</b></h4> 
+              <p>Turno de ir a la lavanderia</p> 
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container">
+              
+              <h4><b><a href="amigos.html"><i id="taskIcon" class="fa fa-tasks"></i></a>Ida al cina</b></h4> 
+              
+              <p>Coperacha</p> 
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container">
+              
+              <h4><b><a href="equipo.html"><i id="taskIcon" class="fa fa-tasks"></i></a>Entrenamiento</b></h4> 
+              
+              <p>Lunes</p> 
+            </div>
+          </div>
+
+
+          <div id="id01" class="modal">
+  
+            <form class="modal-content animate"  method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="../images/task.png" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Nombre de Tarea</b></label>
+                <input type="text"  name="NombreContacto">
+          
+                <label for="psw"><b>Descripcion</b></label>
+                <input type="text"  name="telefonoContacto">
+                <label for="psw"><b>Asignar a grupo/grupos</b></label>
+
+                <ul id="myULL">
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-group"></i><a id="unmodificable">Familia</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-group"></i><a id="unmodificable"></a>Amigos</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-group"></i><a id="unmodificable">Reunion</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-group"></i><a id="unmodificable">Equipo</a></li>
+                </ul>
+
+                  
+                <button>Guardar</button>
+                
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+            </form>
+          </div>
+
+          <script>
+
+
+            // Add a "checked" symbol when clicking on a list item
+            var list = document.getElementById("myULL");
+            list.addEventListener('click', function(ev) {
+              if (ev.target.tagName === 'LI') {
+                ev.target.classList.toggle('checked');
+              }
+            }, false);
+            
+            
+            </script>
+
+        </body>
+    
+</html>

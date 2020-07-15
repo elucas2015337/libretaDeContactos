@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/botones.css">
+<link rel="stylesheet" type="text/css" href="../css/nuevoContacto.css">
+<link rel="stylesheet" type="text/css" href="../css/style2.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Familia</title>
+
+</head>
+        <body>
+          <script src="../js/search.js"></script>
+          <script src="../js/nuevoContacto.js"></script>
+            <ul id= "barra">
+              <li id="tres"><a>Familia</a></li>
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar Miembro..." title="Escribe el grupo">
+            </ul>
+
+          <div class = "barraDeIconos">
+            <a href="../index.html"><i class="fa fa-user"></i></a>
+            <a class="active" href="groups.html"><i class="fa fa-group"></i></a>
+            <a href="tasks.html"><i class="fa fa-tasks"></i></a>
+          </div>
+
+          <ul id="myUL">
+            <li><i id="contactIcon" class="fa fa-user-circle"></i><i id="editContactIcon" class="fa fa-edit"></i><a href="../html/albertoMendoza.html">Alberto Mendoza</a></li>
+            <li><i id="contactIcon" class="fa fa-user-circle"></i><i id="editContactIcon" class="fa fa-edit"></i><a href="../html/albertoMendoza2.html">Alberto Mendoza 2</a></li>
+            <li><i id="contactIcon" class="fa fa-user-circle"></i><i id="editContactIcon" class="fa fa-edit"></i><a href="../html/alfredsPuter.html">Alfreds Puter</a></li>
+            <li><i id="contactIcon" class="fa fa-user-circle"></i><i id="editContactIcon" class="fa fa-edit"></i><a href="../html/bonolichiSinapellido.html">Bonolichi Sinapellido</a></li>
+          </ul>
+
+          <div id="id01" class="modal">
+  
+            <form class="modal-content animate"  method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="../images/user.png" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="container">
+                <ul id="myULL">
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-user-circle"></i><a id="unmodificable">Braxx Echeverria</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-user-circle"></i><a id="unmodificable">Celeste Sinapellido</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-user-circle"></i><a id="unmodificable">Carlos IGGS</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-user-circle"></i><a id="unmodificable">Chicry</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-user-circle"></i><a id="unmodificable">Daniel Trabajo</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-user-circle"></i><a id="unmodificable">Daniel Personal</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-user-circle"></i><a id="unmodificable">Donnadie Perez</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-user-circle"></i><a id="unmodificable">Dulce Fargana</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-user-circle"></i><a id="unmodificable">Ernesto Jimenez</a></li>
+                  <li id="select"><i id="contactIconInSelect" class="fa fa-user-circle"></i><a id="unmodificable">Firulais</a></li>
+                </ul>
+                  
+                <button>Guardar</button>
+                
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              </div>
+            </form>
+              </div>
+
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button button3"><i class="fa fa-user-plus"></i></button>
+    
+          <script>
+
+
+            // Add a "checked" symbol when clicking on a list item
+            var list = document.getElementById("myULL");
+            list.addEventListener('click', function(ev) {
+              if (ev.target.tagName === 'LI') {
+                ev.target.classList.toggle('checked');
+              }
+            }, false);
+            
+            
+            </script>
+</html>
